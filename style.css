@@ -1,57 +1,94 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    display: flex;
-    background-color: #edf2f8;
-    min-height: 850px;
-    justify-content: center;
-    align-items: center;
-}
-.container-card{
-    border:2px solid black;
-    width: 50%;
-    justify-content: center;   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.drawers{
-    width: 300px;
-    object-fit:cover;
-    
+body {
+  display: flex;
+  background-color: #edf2f8;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: #48556a;
+  font-family: "Manrope", sans-serif;
+}
+img {
+  width: 100%;
+}
+h1 {
+  line-height: 1.36;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 3%;
+}
+p {
+  line-height: 1.5;
+  color: #6d7f97;
+  font-size: 17px;
+}
+strong {
+  font-weight: bold;
+  color: #48556a;
+}
+.container--center {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.items--center {
+  align-items: center;
 }
 
-.container-center{
-    display: flex;
-    justify-content: space-between;
+.container__card {
+  flex-basis: 885px;
+  min-height: 345px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px #6d7f9755;
 }
 
-.picture-personal{
-    width: 60px;
-    border-radius: 50%;
-}
-.nombre{
-    font-weight: bold;
-}
-.texto{
-    padding: 5%;
-    background-color: #ffffff;
-}
-.personal{
-    gap:30px;
-    align-items: center;
-}
-.share{
-    display: flex;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #edf2f8;
-    justify-content: center;
-    align-items: center;
-    
+.drawers {
+  flex-basis: 345px;
+  width: 345px;
+  flex-grow: 1;
+  object-fit: cover;
 }
 
-
+.container__text {
+  flex-basis: 540px;
+  width: 540px;
+  flex-grow: 1;
+  padding: 5%;
+}
+.container__text :first-child > p {
+  margin-bottom: 4%;
+}
+.personal {
+  column-gap: 25px;
+  align-items: center;
+}
+.picture-personal {
+  width: 60px;
+  border-radius: 50%;
+}
+.share {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #edf2f8;
+  justify-content: center;
+}
+.flecha {
+  max-width: 50%;
+}
+/*@media en relacion al la capacidad de flex-wrap del "container__card "*/
+@media only screen and (max-width: 885px) {
+  .container__card {
+    flex-basis: 445px;
+  }
+}
