@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-color: #edf2f8;
+    min-height: 850px;
+    justify-content: center;
+    align-items: center;
+}
+.container-card{
+    border:2px solid black;
+    width: 50%;
+    justify-content: center;   
+}
+
+.drawers{
+    width: 300px;
+    object-fit:cover;
+    
+}
+
+.container-center{
+    display: flex;
+    justify-content: space-between;
+}
+
+.picture-personal{
+    width: 60px;
+    border-radius: 50%;
+}
+.nombre{
+    font-weight: bold;
+}
+.texto{
+    padding: 5%;
+    background-color: #ffffff;
+}
+.personal{
+    gap:30px;
+    align-items: center;
+}
+.share{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #edf2f8;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
